@@ -1,0 +1,8 @@
+
+This is a collection of settings, files, scripts and templates to use
+with pandoc. The aim is to provide a consistent output no matter what
+the format, without making compromises on typography.
+
+# Useful filters
+
+[pandoc-latex-environment](https://github.com/chdemko/pandoc-latex-environment/)
