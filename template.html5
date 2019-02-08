@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$" />
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  <style>
+      body{line-height:1.428571429;}
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+      a.uri {overflow-wrap: break-word;overflow-wrap: anywhere;}
+      p{$if(lang)$/* Disable until browsers get better at this hyphens: auto;*/$endif$}
+      p:first-child {hanging-punctuation: first;}
+      h1, h2, h3, h4 {
+          color: #333333;
+          line-height: 112%;
+      }
+      h1.title {
+          font-weight: 300;
+          font-size: 230%;
+          margin-top: 0.8em;
+          margin-bottom: 0.8em;
+      }
+      h1 {
+          font-size: 250%;
+          margin-top: 4em;
+          margin-bottom: 1em;
+      }
+      h2 {
+          font-size: 220%;
+          margin-top: 3em;
+          margin-bottom: 1em;
+      }
+      h3 {
+          font-size: 160%;
+          margin-top: 2em;
+          margin-bottom: 1em;
+      }
+      h4 {
+          font-size: 125%;
+          margin-top: 1.3em;
+          margin-bottom: 1em;
+      }
+      h5 {
+          font-size: 110%;
+          margin-top: 1.1em;
+          margin-bottom: 0.9em;
+      }
+      h6 {
+          font-size: 100%;
+          font-style: italic;
+          margin-top: 1em;
+          margin-bottom: 0.7em;
+      }
+      h7 {
+          font-size: 90%;
+      }
+      blockquote p {
+          hanging-punctuation: first;
+      }
+      .hangquote, .hangguillemet {
+          display: inline-block;
+          text-indent: -0.4em;
+      }
+      .hangguillemet{text-indent: -0.8em}
+      .footnote-ref {
+          text-decoration: none;
+          opacity: 0.5;
+          line-height: 0.8;
+          font-size: 90%;
+      }
+      .footnote-ref:hover {
+          opacity: 1;
+      }
+      .footnotes {
+          margin-top: 10em;
+      }
+      sup, sub {
+          vertical-align: baseline;
+          position: relative;
+          top: -0.4em;
+      }
+      sub {top: 0.3em;}
+$if(quotes)$
+      q { quotes: "“" "”" "‘" "’"; }
+$endif$
+  </style>
+$if(highlighting-css)$
+  <style>
+$highlighting-css$
+  </style>
+$endif$
+$for(css)$
+  <link rel="stylesheet" href="$css$" />
+$endfor$
+$if(math)$
+  $math$
+$endif$
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+$for(header-includes)$
+  $header-includes$
+$endfor$
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+$if(title)$
+<header id="title-block-header">
+<h1 class="title">$title$</h1>
+$if(subtitle)$
+<p class="subtitle">$subtitle$</p>
+$endif$
+$for(author)$
+<p class="author">$author$</p>
+$endfor$
+$if(version)$
+<p class="version"><span class="label">version </span>$version$$if(date)$ <span class="date">$date$</span>$endif$</p>
+$else$$if(date)$
+<p class="date">$date$</p>
+$endif$
+$endif$
+$if(abstract)$
+<p class="abstract">$abstract$</p>
+$endif$
+$if(keywords)$
+<p class="keywords">$keywords$</p>
+$endif$
+</header>
+$endif$
+$if(toc)$
+<nav id="$idprefix$TOC">
+$table-of-contents$
+</nav>
+$endif$
+<main class="main-body">
+$body$
+</main>
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>
