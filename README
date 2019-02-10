@@ -3,6 +3,11 @@ This is a collection of settings, files, scripts and templates to use
 with pandoc. The aim is to provide a consistent output no matter what
 the format, without making compromises on typography.
 
-# Useful filters
+Some filters used with these files are not provided in this repo (e.g. 
+[pandoc-latex-environment](https://github.com/chdemko/pandoc-latex-environment/)).
 
-[pandoc-latex-environment](https://github.com/chdemko/pandoc-latex-environment/)
+I personally also use emacs' [pandoc-mode](https://github.com/joostkremers/pandoc-mode/).
+But these templates and files can also be used without pandoc-mode (in
+which case the Project.* files are useless as such). However, there
+might be some good arguments you might want to take inspiration from
+to execute the right pandoc commands.
