@@ -1,12 +1,14 @@
 #!/bin/bash
 
+# Change some custom xml into LaTeX commands
+
 sed 's#"html","<label>"#"latex","\\\\label\{"#g' | \
     sed 's#"html","<\/label>"#"latex","\}"#g' | \
     sed 's#"html","<vref>"#"latex","\\\\vref\{"#g' | \
     sed 's#"html","<\/vref>"#"latex","\}"#g' | \
     sed 's#"html","<ref>"#"latex","\\\\ref\{"#g' | \
     sed 's#"html","<\/ref>"#"latex","\}"#g' | \
-    sed 's#"html","<hg>"#"latex","\\\\Hangquote\{«\ \}"#g'| \
+    sed 's#"html","<hg>"#"latex","\\\\Hangquote\{«\ \}"#g'| \ # Special hanging quotes
     sed 's#"html","<hq>"#"latex","\\\\Hangquote\{“\}"#g'| \
     sed 's#"html","<bigskip>"#"latex","\\\\bigskip"#g'| \
     sed 's#"html","<vfill>"#"latex","\\\\vfill"#g'| \

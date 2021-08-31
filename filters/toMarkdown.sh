@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Change custom xml bits into more readable markdown (but lose functionality)
+
 sed 's#"html","<label>"#"html","<a id="#g'  | \
     sed 's#"html","<\/label>"#"html","><\/a>"#g' | \
     sed 's#"html","<vref>"#"html",""#g'  | \
