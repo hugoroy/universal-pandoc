@@ -87,6 +87,7 @@ $endif$
       .footnotes {
           margin-top: 10em;
       }
+      .footnotes hr {border:0}
       sup, sub {
           vertical-align: baseline;
           position: relative;

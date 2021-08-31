@@ -60,7 +60,6 @@ classoption: oneside
 papersize: a4paper
 fontsize: 11pt
 links-as-notes: true
-subparagraph: yes
 numbersections: true
 secnumdepth: 0
 toc: false
